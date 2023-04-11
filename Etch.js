@@ -10,3 +10,9 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16, 16);
+
+const singleGrid = document.querySelector(".grid-item")
+singleGrid.addEventListener ('mouseenter', () => {
+  singleGrid.classList.add ("playing")
+})
+

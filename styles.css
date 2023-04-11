@@ -17,3 +17,8 @@
     border: 2px solid #ddd;
     text-align: center;
   }
+
+  .playing {
+    background-color: bisque;
+    transform: scale(1.1);
+  }
