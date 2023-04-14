@@ -9,13 +9,17 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows(16, 16);
+makeRows(20, 20);
 
 const singleGrid = document.querySelectorAll(".grid-item");
 Array.from(singleGrid).forEach((singleGrid) => {
   singleGrid.addEventListener('mouseenter', () => {
   singleGrid.classList.add ("playing")
   })
+
+  singleGrid.addEventListener('mouseleave', () => {
+    singleGrid.classList.remove ("playing")
+    })
 })
 
 
