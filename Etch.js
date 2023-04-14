@@ -11,8 +11,17 @@ function makeRows(rows, cols) {
 
 makeRows(16, 16);
 
-const singleGrid = document.querySelector(".grid-item")
-singleGrid.addEventListener ('mouseenter', () => {
+const singleGrid = document.querySelectorAll(".grid-item");
+Array.from(singleGrid).forEach((singleGrid) => {
+  singleGrid.addEventListener('mouseenter', () => {
   singleGrid.classList.add ("playing")
+  })
 })
+
+
+
+
+
+
+//need to add a class removal for "mouse leave". Key to having each one behave this way so far is probably via a "forEach" function. Hopefully!!
 
