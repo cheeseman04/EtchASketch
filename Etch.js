@@ -1,4 +1,7 @@
 const container = document.getElementById("container");
+const userChoice = document.querySelector(".button")
+
+
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -9,7 +12,14 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows(20, 20);
+makeRows (16, 16)
+
+function createGrid () {
+  let rows = cols = prompt('Please enter a number' + '')
+  makeRows (rows, cols)
+}
+
+userChoice.addEventListener('click', createGrid)
 
 const singleGrid = document.querySelectorAll(".grid-item");
 Array.from(singleGrid).forEach((singleGrid) => {
