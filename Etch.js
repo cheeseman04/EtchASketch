@@ -1,5 +1,5 @@
 const container = document.getElementById("container");
-const userChoice = document.querySelector(".button")
+// const userChoice = document.querySelector(".button")
 
 
 
@@ -12,30 +12,32 @@ function makeRows(rows, cols) {
   };
 };
 
-makeRows (16, 16)
+makeRows (16,16)
 
-function createGrid () {
-  let rows = cols = prompt('Please enter a number' + '')
-  makeRows (rows, cols)
-}
+// function createGrid () {
+//   let rows = cols = prompt('Please enter a number' + '');
+//   makeRows (rows, cols);
+//   const singleGrid = document.querySelectorAll(".grid-item");
+//   console.log (singleGrid)
+//   Array.from(singleGrid).forEach((singleGrid) => {
+//     singleGrid.addEventListener('mouseenter', () => {
+//     singleGrid.classList.add ("playing")
+//     })
 
-userChoice.addEventListener('click', createGrid)
-
-const singleGrid = document.querySelectorAll(".grid-item");
-Array.from(singleGrid).forEach((singleGrid) => {
-  singleGrid.addEventListener('mouseenter', () => {
-  singleGrid.classList.add ("playing")
-  })
-
-  singleGrid.addEventListener('mouseleave', () => {
-    singleGrid.classList.remove ("playing")
-    })
-})
+//     singleGrid.addEventListener('mouseleave', () => {
+//       singleGrid.classList.remove ("playing")
+//       })
+//   })
 
 
 
 
 
+// }
 
-//need to add a class removal for "mouse leave". Key to having each one behave this way so far is probably via a "forEach" function. Hopefully!!
+// userChoice.addEventListener('click', createGrid)
+
+
+
+
 
